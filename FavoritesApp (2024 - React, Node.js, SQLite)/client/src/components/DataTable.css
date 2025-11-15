@@ -1,0 +1,165 @@
+.page-container {
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.wrapper {
+  border-radius: 6px;
+  border: 2px solid white;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-style: hidden;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000000;
+}
+
+tr {
+  border-bottom: 2px solid #ffffff;
+  border-radius: 10px;
+  transition: transform 250ms ease;
+}
+
+td {
+  text-align: center;
+  padding: 10px 0px;
+  padding-right: 15px;
+}
+
+.rank {
+  width: 10%;
+  padding-right: 0px;
+}
+
+.gold {
+  color: gold;
+  font-weight: 800;
+}
+
+.silver {
+  color: silver;
+  font-weight: 800;
+}
+
+.bronze {
+  color: #cd7f32;
+  font-weight: 800;
+}
+
+.remove {
+  width: 4%;
+  color: #ffffff;
+  background-color: #000000;
+  border: 0px;
+  font-size: 20px;
+  opacity: 50%;
+  visibility: hidden;
+  margin-right: 0 auto;
+  float: right;
+  padding-top: 4px;
+}
+
+.add {
+  width: 4%;
+  opacity: 50%;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  border: 0px;
+  visibility: hidden;
+  float: right;
+  padding-top: 4px;
+}
+
+.drag {
+  width: 2%;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 20px;
+  opacity: 50%;
+  visibility: hidden;
+  margin-right: 0 auto;
+  float: right;
+  border: none;
+  padding-top: 4px;
+}
+
+tr:hover .remove {
+  visibility: visible;
+}
+
+tr:hover .add {
+  visibility: visible;
+}
+
+tr:hover .drag {
+  visibility: visible;
+}
+
+.remove:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.drag:hover {
+  cursor: grab;
+  opacity: 100%;
+}
+
+.drag:active {
+  cursor: grabbing;
+}
+
+.add:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+textarea {
+  margin-top: 2px;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  border: 0px;
+  font-size: 17px;
+  width: 82%;
+  margin-left: 15px;
+  resize: none;
+  height: 1em;
+  overflow: hidden;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 800px) {
+  .page-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  textarea {
+    margin-top: 15px;
+    font-size: 12px;
+    margin-left: 34px;
+    width: 71%;
+    height: 2em;
+  }
+  .drag,
+  .remove {
+    width: 2%;
+    margin-left: 13px;
+  }
+  .add {
+    width: 2%;
+  }
+}
